@@ -43,4 +43,4 @@ To install laravel in the container, run the following command;
 
 `cd ./src && composer create-project laravel/laravel .`
 
-Happy Coding. :metal: :octocat:
+Happy Coding Champez :metal: :octocat:

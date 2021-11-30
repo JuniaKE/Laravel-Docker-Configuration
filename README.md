@@ -32,6 +32,7 @@ To clone the project run:
         fastcgi_param PATH_INFO $fastcgi_path_info;
     }
     }
+}
 ...
 ## Set up the containers
 You will need to be inside that project file to enter all of the rest of the commands in this tutorial. So remember to type `cd Laravel-Docker-Configuration` to move your terminal working location to the project file we just barely created.

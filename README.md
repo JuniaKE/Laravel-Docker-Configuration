@@ -36,6 +36,9 @@ server {
     }
 }
 ```
+
+## Switching the php versions to use
+To switch the php version to `php:8.0-apache`, on the `Dockerfile.yml` and uncomment the `#FROM php:8.0-apache`
 ## Set up the containers
 You will need to be inside that project file to enter all of the rest of the commands in this tutorial. So remember to type `cd Laravel-Docker-Configuration` to move your terminal working location to the project file we just barely created.
 

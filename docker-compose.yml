@@ -2,6 +2,7 @@ version: '3'
 networks:
   laravel:
     driver: bridge
+
 services:
   nginx:
     image: nginx:stable-alpine
@@ -41,7 +42,8 @@ services:
         - laravel
       environment:
         PMA_HOST: mysql
-        PMA_PORT: 4306
+#        PMA_USER: root
+        PMA_PASSWORD: se.bkiprono
         PMA_ARBITRARY: 1
       restart: always
       ports:

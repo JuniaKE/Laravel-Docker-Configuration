@@ -38,10 +38,11 @@ server {
 You will need to be inside that project file to enter all of the rest of the commands in this tutorial. So remember to type `cd Laravel-Docker-Configuration` to move your terminal working location to the project file we just barely created.
 
 `docker-compose build && docker-compose up -d`
-
 ## Install Laravel 
 To install laravel in the container, run the following command;
 
 `cd ./src && composer create-project laravel/laravel .`
+
+Reach out to me on [Personal Email](mailto:briankoech650@gmail.com) or [Work Email](mailto:se.bkiprono@gmail.com)  
 
 Happy Coding Champez :metal: :octocat:

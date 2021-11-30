@@ -9,7 +9,8 @@ To clone the project run:
 
 ## Configuring nginx.conf
 
-...javascript 
+... 
+
     server {
     listen 80;
     index index.php index.html;
@@ -30,7 +31,6 @@ To clone the project run:
         include fastcgi_params;
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
         fastcgi_param PATH_INFO $fastcgi_path_info;
-    }
     }
 }
 ...

@@ -10,7 +10,8 @@ To clone the project run:
 ## Configuring nginx.conf
 
 ...javascript 
-server {
+
+    server {
     listen 80;
     index index.php index.html;
     server_name localhost;

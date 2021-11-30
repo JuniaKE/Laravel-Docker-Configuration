@@ -1,9 +1,8 @@
 version: '3'
 networks:
   laravel:
-
+    driver: bridge
 services:
-  
   nginx:
     image: nginx:stable-alpine
     container_name: nginx
@@ -27,15 +26,26 @@ services:
     volumes:
       - ./mysql:/var/lib/mysql
     environment:
-      MYSQL_DATABASE: homestead
-      MYSQL_USER : homestead
-      MYSQL_PASSWORD: secret
-      MYSQL_ROOT_PASSWORD: homestead
+      MYSQL_DATABASE: laravel
+      MYSQL_USER : root
+      MYSQL_PASSWORD: se.bkiprono
+      MYSQL_ROOT_PASSWORD: se.bkiprono
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
     networks:
       - laravel
-
+  phpmyadmin:
+      image: phpmyadmin/phpmyadmin
+      container_name: pma
+      networks:
+        - laravel
+      environment:
+        PMA_HOST: mysql
+        PMA_PORT: 4306
+        PMA_ARBITRARY: 1
+      restart: always
+      ports:
+        - "8081:80"
   php:
     build: 
       context: .
@@ -47,4 +57,4 @@ services:
       - "9000:9000"
     networks:
       - laravel
-
+  

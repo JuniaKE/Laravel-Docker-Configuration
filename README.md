@@ -10,3 +10,9 @@ You will need to be inside that project file to enter all of the rest of the com
 
 `docker-compose build && docker-compose up -d`
 
+## Install Laravel 
+To install laravel in the container, run the following command;
+
+`cd ./src && create composer create-project laravel/laravel`
+
+> Happy Coding.

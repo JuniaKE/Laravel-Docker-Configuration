@@ -36,7 +36,17 @@ server {
     }
 }
 ```
+## Database Configurations
+You may need to change the database details on the `docker-compose.yml` file. Below are the fields you'll modify to suite your use-case;
 
+```javascript
+ environment:
+      MYSQL_DATABASE: --------
+      MYSQL_USER : ----------
+      MYSQL_PASSWORD: -----------
+      MYSQL_ROOT_PASSWORD: -----------
+
+```
 ## Switching the php versions to use
 To switch the php version to `php:8.0-apache`, on the `Dockerfile.yml`  uncomment the `#FROM php:8.0-apache`
 ## Set up the containers

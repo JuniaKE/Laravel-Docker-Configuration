@@ -2,7 +2,6 @@ version: '3'
 networks:
   laravel:
     driver: bridge
-
 services:
   nginx:
     image: nginx:stable-alpine
